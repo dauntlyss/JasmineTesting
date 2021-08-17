@@ -35,11 +35,11 @@ describe("Payment Tests with set up and tear down", function() {
     
         let curTdList = document.querySelectorAll('#paymentTable tbody tr td');
     
-        expect(curTdList.length).toEqual(3);
+        expect(curTdList.length).toEqual(4);
         expect(curTdList[0].innerText).toEqual('$50');
         expect(curTdList[1].innerText).toEqual('$15');
         expect(curTdList[2].innerText).toEqual('30%');
-        //expect(curTdList[3].innerText).toEqual('X');
+        expect(curTdList[3].innerText).toEqual('X');
     });
 
     it('should create a new payment on createCurPayment()', function () {
